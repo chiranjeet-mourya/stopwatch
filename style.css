@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(to left, #FFA6FF, #DDD0FD);
+    position: relative;
+    font-family: sans-serif;
+}
+.java{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline double;
+    font-size: 60px;
+    text-shadow: 0px 1px 10px rgb(39, 39, 54);
+}
+h2,
+#sp{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgb(104, 104, 32);
+}
+h2{
+    font-size: 45px;
+}
+img{
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#timer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-shadow: 1px 1px 5px #000;
+}
+img:hover{
+    filter: hue-rotate(90deg);
+    transform: scale(1.1);
+}
+#clock{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+@media (max-width:568px){
+    .java {
+        line-height: 80px;
+    }
+    #timer {
+        top: 60%;
+    }
+}
+
+@media (max-width:468px){
+    .java{
+        font-size: 40px;
+        line-height: 55px;
+    }
+    #timer {
+        top: 55%;
+    }
+    #clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+    }
+}
+@media (max-width:360px){
+    .java {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #timer {
+        top: 35%;
+    }
+    #clock {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
